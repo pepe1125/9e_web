@@ -2,7 +2,7 @@
 
 > A webshop linkje:
 
-[WEBSHOP](https://pepe1125.github.io/9e_web)
+[WEBSHOP](https://pepe1125.github.io/9e_web/webshop_index.html)
 
 Készítők:
 
