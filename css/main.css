@@ -66,7 +66,7 @@ body {
   }
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;-
+    right: 0;
     top: 0;
   }
   .topnav.responsive a {
@@ -142,4 +142,3 @@ body {
   .dropdown:hover .dropdown-content2 {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  }
