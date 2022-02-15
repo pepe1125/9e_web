@@ -92,9 +92,6 @@ body {
     margin: 0; 
   }
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
   
   .dropdown-content{
     display: none;
@@ -141,4 +138,8 @@ body {
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropdown-content2 {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#jobb {
+    float: right;
+}
