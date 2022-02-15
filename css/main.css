@@ -1,11 +1,6 @@
 .header {
   height: 175px;
   background-color: salmon;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
 }
 
 .logo {
@@ -24,6 +19,10 @@ h1 {
 /*
 Reszponzív felsőnavigáció
 */
+
+body {
+    margin: auto;
+}
 
 .topnav {
   overflow: hidden;
