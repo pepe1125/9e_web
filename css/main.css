@@ -138,8 +138,19 @@ body {
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropdown-content2 {display: block;}
   
-
-
 #jobb {
     float: right;
 }
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #7c7c7c;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
