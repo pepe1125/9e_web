@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
+/*Animáció*/
+
+@keyframes alap {
+    from {background-color: #fed0014b;}
+    to {background-color: #FECE01;}
+  }
+
 body {
   background-color: rgba(190, 189, 189, 0.61);
   margin: auto;
@@ -9,8 +16,12 @@ body {
 /* Akciós sáv */
 .akcio {
   height: 40px;
+  animation-name: alap;
+  animation-duration: 6s;
   background-color: #FECE01;
 }
+
+/*Bekezdések*/
 
 p {
     text-align: center;
@@ -43,6 +54,7 @@ p {
 /* H1-es címsor */
 
 h1 {
+  letter-spacing: 3px;
   text-align: center;
   font-family: "Bungee Shade", cursive;
   font-size: 1.7em;
@@ -52,7 +64,10 @@ h1 {
   transition: 2s;
 }
 
+/* Hover effekt */
+
 h1:hover {
+    letter-spacing: 2px;
     transform: translate(0px,50px);
     color: rgb(245, 245, 245);
 }
@@ -157,13 +172,7 @@ img.gyerek:hover {
     float: right;
   }
 
-
-/*
-Reszponzív felsőnavigáció
-*/
-
-
-
+/* Reszponzív felsőnavigáció */
 
 .topnav {
   background-color: #131313cb;
@@ -188,6 +197,8 @@ Reszponzív felsőnavigáció
 .topnav .icon {
   display: none;
 }
+
+/* Reszponzív felsőnavigáció */
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
@@ -301,8 +312,6 @@ Reszponzív felsőnavigáció
 .dropdown:hover .dropdown-content2 {
   display: block;
 }
-
-
 
 
 /* Lábléc */
