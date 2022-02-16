@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login_reg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KandóKicks</title>
 </head>
 
 <body>
     <div class="akcio">
-        <p></p>
+        <p>Ingyenes szállítás 55.000Ft felett!</p>
     </div>
     <div class="header">
         <img src="./img/logo/logo.png" alt="Logó" title="Logó" class="logo">
@@ -54,20 +55,18 @@
         </div>
     </div>
     <div style="text-align: center;">
-        <form action="action_page.php">
+        <form>
             <div class="container">
               <h2 class="regisztracio_szin">Bejelentkezés</h2>
 
               <hr>
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              <input type="text" placeholder="Add meg az emailedet!" name="email" id="email" required>
                 <br>
-              <label for="psw"><b>Jelszó</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
                 <br>
                 <hr>
-            <p>Még nincs fiókod? <a href="register.html">Regisztrálj!</a>.</p>
-              <button type="submit" class="registerbtn">Register</button>
+            <p>Még nincs fiókod?&nbsp; <a href="register.html"> Regisztrálj!</a></p>
+              <button type="submit" onclick="log()" class="registerbtn">Bejelentkezés</button>
               <br>
             </div>
           </form>
@@ -75,5 +74,17 @@
     <div class="footer">
         <p>Copyright 🂱 Kandó © </p>
     </div>
+
+    <script>
+
+        function log(){
+            
+            alert("Sikeres bejeltkezés")
+            window.open("webshop_index.html")
+        
+        }
+
+    </script>
+
 </body>
 </html>
