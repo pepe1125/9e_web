@@ -82,6 +82,14 @@
             alert("Sikeres bejelentkezés!")
             window.open("webshop_index.html")
         
+            let new_window =
+                open(location, '_self');
+  
+            // Close this window
+            new_window.close();
+  
+            return false;
+
         }
 
     </script>
