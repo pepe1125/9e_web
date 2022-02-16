@@ -8,8 +8,22 @@ body {
 
 /* Akciós sáv */
 .akcio {
-  height: 50px;
-  background-color: #eaff00;
+  height: 40px;
+  background-color: #FECE01;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: rgba(46, 46, 46, 0.925);
+    font-weight: bold;
 }
 
 
