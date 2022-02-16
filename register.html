@@ -55,7 +55,7 @@
         </div>
     </div>
     <div style="text-align: center;">
-        <form action="action_page.php">
+        <form >
             <div class="container">
               <h2 class="regisztracio_szin">Regisztráció</h2>
 
@@ -82,6 +82,14 @@
             alert("A rendszer átírányít a bejelentkező felületre")
 
             window.open("bejelentkezes.html")
+
+            let new_window =
+                open(location, '_self');
+  
+            // Close this window
+            new_window.close();
+  
+            return false;
         }
 
     </script>
