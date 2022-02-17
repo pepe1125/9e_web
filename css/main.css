@@ -79,31 +79,7 @@ h1:hover {
   float: right;
 }
 
-/* Reszponzív felsőnavigáció */
 
-.topnav {
-  background-color: #131313cb;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: rgba(245, 245, 245, 0.699);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: 'MuseoModerno', cursive;
-}
-
-.topnav a:hover {
-  color: rgb(43, 42, 42);
-}
-
-.topnav .icon {
-  display: none;
-}
 
 
 /* Lábléc */
