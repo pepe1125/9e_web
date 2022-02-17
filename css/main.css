@@ -69,7 +69,7 @@ h1 {
 
 h1:hover {
     letter-spacing: 2px;
-    transform: translate(0px,50px);
+    transform: translate(0px,80px);
     color: rgb(245, 245, 245);
 }
 
