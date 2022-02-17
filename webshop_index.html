@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/fooldal.css">
+  <link rel="stylesheet" href="css/respnavbar.css">
   <script src="js/mozgomenu.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>KandóKicks</title>
@@ -52,11 +53,14 @@
 
       <a href="gyerek.html">Gyerek</a>
 
-      <a href="kosar.html" id="jobb">Kosár&nbsp; <i class="fa fa-shopping-cart"></i>
-      </a>
-      <a href="aszf.html" id="jobb" class="active">ÁSZF</a>
-      <a href="rolunk.html" id="jobb" class="active">Rólunk</a>
-      <a href="bejelentkezes.html" id="jobb" class="active">Bejelentkezés</a>
+      <div style="display: inline-flex;">
+        <a href="kosar.html" id="jobb"><i class="fa fa-shopping-cart"></i>
+        </a>
+        <a href="aszf.html" id="jobb" class="active">ÁSZF</a>
+        <a href="rolunk.html" id="jobb" class="active">Rólunk</a>
+        <a href="bejelentkezes.html" id="jobb" class="active">Bejelentkezés</a>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </div>
   <div class="slideshow-container">
@@ -80,7 +84,6 @@
     <a href="gyerek.html"><img class="slideshow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9kQGtiXa0XIycFz-isAuJvhDRFJNhc5T9A&usqp=CAU" style="width:100%"></a>
     <div class="centered">Gyerek cipők</div>
   </div>
-  
   <a class="prev" onclick="plusSlides(-1)"><p class="left-right">&#10094;</p></a>
   <a class="next" onclick="plusSlides(1)"><p class="left-right">&#10095;</p></a>
   
@@ -89,6 +92,7 @@
   </div>
 
   <script src="js/mozgomenu.js"></script>
+  <script src="js/topnav.js"></script>
 
 
   <div class="footer">
