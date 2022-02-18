@@ -46,7 +46,7 @@ p {
 }
 
 .logo {
-  width: 212px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -58,8 +58,8 @@ h1 {
   letter-spacing: 3px;
   text-align: center;
   font-family: "Bungee Shade", cursive;
-  font-size: 1.7em;
-  margin-top: -15px;
+  font-size: 2.5em;
+  margin-top: -45px;
   font-weight: 800;
   color: rgba(245, 245, 245, 0.699);
   transition: 2s;
