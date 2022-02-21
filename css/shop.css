@@ -5,10 +5,15 @@
     .felkapott_kepek{
         border: 2px solid rgb(59, 59, 59);
         border-radius: 20px;
-        width: 280px;
-        height: 200px;
+        width: 90%;
+        height: 100%;
         transition: 1s;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
+
+
     .felkapott_kepek_2 {
         justify-content: center;
         margin-left: auto;
@@ -22,7 +27,7 @@
     }
     .felkapott_hatter {
         background-color: rgba(114, 113, 113);
-        width: 320px;
+        width: 16.8em;
         margin-top: 0.7em;
         margin-left: 0.7em;
         height: 450px;
@@ -30,6 +35,7 @@
         border-radius: 5px;
         box-shadow: 5px 10px black;
         margin-bottom: 15px;
+
     }
     .felkapott_kepek_travis {
         width: 400px;
@@ -39,12 +45,11 @@
         margin-bottom: 200px;
     }
     .alap {
-        display: inline-flex;
+        display: flex;
+  flex-wrap: wrap;
     }
     
     .felkapott_kepek:hover {
     transform: scale(1.1);
-    
-    
     
     }
