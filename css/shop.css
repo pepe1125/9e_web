@@ -6,7 +6,7 @@
         border: 2px solid rgb(59, 59, 59);
         border-radius: 20px;
         width: 90%;
-        height: 100%;
+        height: 175px;
         transition: 1s;
         margin-left: auto;
         margin-right: auto;
@@ -35,7 +35,6 @@
         border-radius: 5px;
         box-shadow: 5px 10px black;
         margin-bottom: 15px;
-
     }
     .felkapott_kepek_travis {
         width: 400px;
@@ -52,4 +51,11 @@
     .felkapott_kepek:hover {
     transform: scale(1.1);
     
+    }
+
+
+    @media screen and (min-width: 1035px){
+        .felkapott_hatter {
+            margin-left: 0.1em;
+        }
     }
