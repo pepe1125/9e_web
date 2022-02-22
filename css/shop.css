@@ -1,61 +1,52 @@
 .felkapott_neve {
-    font-size: 25px;
-    margin-top: -17px;
-    }
-    .felkapott_kepek{
-        border: 2px solid rgb(59, 59, 59);
-        border-radius: 20px;
-        width: 90%;
-        height: 175px;
-        transition: 1s;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+  font-size: 25px;
+  margin-top: -17px;
+}
+.felkapott_kepek {
+  border: 2px solid rgb(59, 59, 59);
+  border-radius: 20px;
+  width: 90%;
+  height: 175px;
+  transition: 1s;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-
-    .felkapott_kepek_2 {
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 350px;
-        
-    }
-    .felkapott_hatter {
-        background-color: rgba(114, 113, 113);
-        width: 16.8em;
-        margin-top: 0.7em;
-        margin-left: 0.7em;
-        height: 450px;
-        margin-right: 47px;
-        border-radius: 5px;
-        box-shadow: 5px 10px black;
-        margin-bottom: 15px;
-    }
-    .felkapott_kepek_travis {
-        width: 400px;
-        border: 2px solid black;
-        border-radius: 20px;
-        margin-left: 780px;
-        margin-bottom: 200px;
-    }
-    .alap {
-        display: flex;
+.felkapott_kepek_2 {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.felkapott_hatter {
+  background-color: rgba(114, 113, 113);
+  width: 16.8em;
+  margin-top: 0.7em;
+  height: 450px;
+  margin-right: 47px;
+  border-radius: 5px;
+  box-shadow: 5px 10px black;
+  margin-bottom: 15px;
+}
+.felkapott_kepek_travis {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: 780px;
+  margin-bottom: 200px;
+}
+.alap {
+  display: flex;
   flex-wrap: wrap;
-    }
-    
-    .felkapott_kepek:hover {
-    transform: scale(1.1);
-    
-    }
+  align-items: center;
+  justify-content: center;
+}
 
-
-    @media screen and (min-width: 1800px){
-        .felkapott_hatter {
-            margin-left: 60px;
-        }
-    }
+.felkapott_kepek:hover {
+  transform: scale(1.1);
+}
