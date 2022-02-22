@@ -51,7 +51,9 @@
   transform: scale(1.1);
 }
 
-
+span.arszin {
+    color: rgb(0, 136, 255);
+}
 
 @media screen and (max-width: 1700px) {
     .felkapott_hatter{
@@ -65,6 +67,7 @@
     #ar {
         margin-top: -15px;
     }
+
     .felkapott_kepek {
         width: 90%;
         height: 125px;
