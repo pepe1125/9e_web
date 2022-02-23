@@ -54,6 +54,13 @@ p {
   display: block;
 }
 
+.kozepre_helyezes{
+  text-align: center;
+}
+
+.betutipus{
+  font-family: "Bungee Shade", cursive;
+}
 
 /* H1-es címsor */
 
