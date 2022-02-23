@@ -78,6 +78,26 @@ p {
   font-weight: bold;
 }
 
+/* Reszponzív */
+
+@media screen and (max-width: 1700px) {
+  
+  #elso {
+    margin-top: 45px;
+  }
+
+  div#adatok {
+    margin-top: 25px;
+  }
+  #respo {
+    margin-top: 45px;
+  }
+  #respo1 {
+    margin-top: 20px;
+  }
+}
+
+
 /* H1-es címsor */
 
 h1 {
