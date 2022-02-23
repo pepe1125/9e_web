@@ -57,6 +57,13 @@ p {
 .kozepre_helyezes{
   text-align: center;
 }
+.balra_helyezes{
+  text-align: left justify;
+}
+
+.sorkizart{
+  text-align: justify;
+}
 
 .betutipus{
   font-family: "Bungee Shade", cursive;
