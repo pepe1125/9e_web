@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/respnavbar.css">
-    <link rel="stylesheet" href="css/login_reg.css" <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login_reg.css" <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KandóKicks</title>
     <link rel="icon" type="image/x-icon" href="img/logo/logo.png">
 </head>
@@ -67,8 +66,7 @@
                 <br>
                 <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
                 <br>
-                <input type="password" placeholder="Add meg a jelszavad mégegyszer!" name="psw-repeat" id="psw"
-                    required>
+                <input type="password" placeholder="Add meg a jelszavad mégegyszer!" name="psw-repeat" id="psw" required>
                 <hr>
                 <button type="submit" onclick="reg()" class="registerbtn">Regisztráció</button>
                 <br>
@@ -82,22 +80,33 @@
 
     <script src="js/topnav.js"></script>
     <script>
-
         function reg() {
-            alert("Sikeresen regisztráció!")
-            alert("A rendszer átírányít a bejelentkező felületre")
+            var email = document.getElementById("email")
+            var jelszo = document.getElementById("psw")
 
-            window.open("bejelentkezes.html")
 
-            let new_window =
-                open(location, '_self');
+            if (email && email.value) {} else {
+                alert("Kérem írja be a hiányzó emailt!")
+            }
 
-            // Close this window
-            new_window.close();
+            if (jelszo && jelszo.value) {} else {
+                alert("Kérem írja be a hiányzó jelszót!")
+            }
 
-            return false;
+            if (jelszo && jelszo.value || email && email.value) {
+                alert("Sikeresen regisztráció");
+
+
+
+                window.open("bejelentkezes.html")
+                let new_window =
+                    open(location, '_self');
+
+                new_window.close();
+
+                return false;
+            }
         }
-
     </script>
 
 
