@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/respnavbar.css">
+    <link rel="stylesheet" href="css/respnavbar.css">
     <link rel="stylesheet" href="css/login_reg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KandóKicks</title>
@@ -59,42 +59,55 @@
     <div style="text-align: center;">
         <form>
             <div class="container">
-              <h2 class="regisztracio_szin">Bejelentkezés</h2>
+                <h2 class="regisztracio_szin">Bejelentkezés</h2>
 
-              <hr>
-              <input type="text" placeholder="Add meg az emailedet!" name="email" id="email" required>
+                <hr>
+                <input type="text" placeholder="Add meg az emailedet!" name="email" id="email" required>
                 <br>
-              <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
+                <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
                 <br>
                 <hr>
-            <p>Még nincs fiókod?&nbsp; <a href="register.html"> Regisztrálj!</a></p>
-              <button type="submit" onclick="log()" class="registerbtn">Bejelentkezés</button>
-              <br>
+                <p>Még nincs fiókod?&nbsp; <a href="register.html"> Regisztrálj!</a></p>
+                <button type="submit" onclick="log()" class="registerbtn">Bejelentkezés</button>
+                <br>
             </div>
-          </form>
+        </form>
     </div>
     <div class="footer">
         <p>A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum</p>
     </div>
 
     <script>
+        function log() {
 
-        function log(){
-            
-            alert("Sikeres bejelentkezés!")
-            window.open("webshop_index.html")
-        
-            let new_window =
-                open(location, '_self');
-  
-            // Close this window
-            new_window.close();
-  
-            return false;
+            var email = document.getElementById("email")
+            var jelszo = document.getElementById("psw")
+
+
+            if (email && email.value) {} else {
+                alert("Kérem írja be a hiányzó emailt!")
+            }
+
+            if (jelszo && jelszo.value) {} else {
+                alert("Kérem írja be a hiányzó jelszót!")
+            }
+
+            if (jelszo && jelszo.value || email && email.value) {
+                alert("Sikeresen bejelentkezés");
+                window.open("webshop_index.html")
+
+                let new_window =
+                    open(location, '_self');
+
+                // Close this window
+                new_window.close();
+
+                return false;
+            }
 
         }
-
     </script>
 
 </body>
+
 </html>
