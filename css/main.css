@@ -69,6 +69,15 @@ p {
   font-family: "Bungee Shade", cursive;
 }
 
+.betutipus2{
+  font-size: 1.2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 0;
+  height: 40px;
+  color: rgba(46, 46, 46, 0.925);
+  font-weight: bold;
+}
+
 /* H1-es címsor */
 
 h1 {
