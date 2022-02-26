@@ -78,6 +78,11 @@ p {
   font-weight: bold;
 }
 
+/* Szín a lábléchez. */ 
+.feher_szin{
+  color: white;
+}
+
 /* Reszponzív */
 
 @media screen and (max-width: 1700px) {
