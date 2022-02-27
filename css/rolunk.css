@@ -46,21 +46,24 @@ body {
   .kepek1{
     display: flex;
     margin: 55px;
+    justify-content: center;
   }
 
   .kepek2{
     display: flex;
     margin: 55px;
+    justify-content: center;
   }
 
   .kepek3{
     display: flex;
     margin: 55px;
+    justify-content: center;  
   }
 
   .kepek4{
     display: flex;
     margin: 55px;
-   justify-content: center;
+    justify-content: center;
   }
 
