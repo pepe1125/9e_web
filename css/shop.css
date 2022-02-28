@@ -28,7 +28,8 @@
   width: 16.8em;
   margin-top: 0.7em;
   height: 450px;
-  margin-right: 47px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
   box-shadow: 5px 10px black;
   margin-bottom: 15px;
@@ -59,6 +60,7 @@ span.arszin {
     .felkapott_hatter{
         width: 12em;
         height: 300px;
+        margin-left: 43px;
     } 
     .felkapott_neve {
         font-size: 17px;
