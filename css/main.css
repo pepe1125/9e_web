@@ -146,6 +146,7 @@ h1:hover {
   bottom: 0;
   width: 100%;
   font-size: 0.9em;
+  padding-top: 15px;
   font-weight: 800;
   background-color: #464545;
   color: rgba(245, 245, 245, 0.699);
@@ -172,8 +173,8 @@ h1:hover {
 #gomb {
   display: none; 
   position: fixed; 
-  bottom: 60px; 
-  right: 9px;
+  bottom: 90px; 
+  right: 11px;
   z-index: 99; 
   background-color: #333; 
   color: white; 
@@ -196,5 +197,14 @@ h1:hover {
 @media screen and (min-width: 1700px) {
   #gomb {
     font-size: 25px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1px) and (max-width: 1101px) {
+  #gomb {
+    bottom: 80px;
   }
 }

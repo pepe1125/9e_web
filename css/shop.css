@@ -77,3 +77,26 @@ span.arszin {
         margin-top: -100px;
       }
   }
+
+
+  @media screen and (max-width: 600px) {
+    .felkapott_hatter{
+        width: 9em;
+        height: 250px;
+        margin-left: 15px;
+        margin-right: 15px;
+    } 
+    .felkapott_neve {
+        font-size: 15px;
+        margin-top: -180px;
+    }
+    #ar {
+        margin-top: -15px;
+    }
+
+    .felkapott_kepek {
+        width: 95%;
+        height: 100px;
+        margin-top: -150px;
+      }
+  }
