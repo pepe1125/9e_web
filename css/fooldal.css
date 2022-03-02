@@ -19,38 +19,6 @@
   transform: translate(-50%, -50%);
 }
 
-#betu {
-  font-family: "Akaya Telivigala", cursive;
-  font-size: 39px;
-  color: #000000;
-  font-weight: bold;
-}
-
-#felkapott {
-  position: absolute;
-  top: 32%;
-  margin-top: 10%;
-  left: 5%;
-}
-
-#noi {
-  position: absolute;
-  top: 108%;
-  margin-top: 10%;
-  left: 5%;
-}
-#ferfi {
-  position: absolute;
-  top: 70%;
-  margin-top: 10%;
-  left: 5%;
-}
-#gyerek {
-  position: absolute;
-  top: 145%;
-  margin-top: 10%;
-  left: 5%;
-}
 
 * {
   box-sizing: border-box;
@@ -99,9 +67,6 @@ img#kepek {
     display: none;
   }
 
-  #felkapott, #noi, #ferfi, #gyerek {
-    display: none;
-  }
 }
 
 .slideshow-container {

@@ -168,13 +168,19 @@ h1:hover {
 
 }
 
+@media screen and (min-width: 1px) and (max-width: 1101px) {
+  .logo {
+   margin-top: 15px;
+  }
+}
+
 /* gomb */
 
 #gomb {
   display: none; 
   position: fixed; 
   bottom: 90px; 
-  right: 11px;
+  right: 11 px;
   z-index: 99; 
   background-color: #333; 
   color: white; 
