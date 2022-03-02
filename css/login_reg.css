@@ -16,7 +16,7 @@ input[type="password"] {
 
 input[type="text"]:hover,
 input[type="password"]:hover {
-  transform: scale(1.1);
+  transform: scale(103%);
 }
 
 input[type="text"]:focus,
