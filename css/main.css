@@ -4,6 +4,11 @@
 
 /*Animáció*/
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @keyframes alap {
   from {
     background-color: #fed0014b;
