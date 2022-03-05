@@ -73,8 +73,16 @@ input[type="checkbox"] {
   margin-right: auto;
   display: block;
   }
-}
 
+  .kepecske {
+    margin: 0 auto 0 auto;
+    display: block;
+    
+    border: 1px solid rgba(0, 0, 0, 0.699);
+    border-radius: 5%;
+    width: 260px;
+}
+}
 a {
   text-decoration: none;
   color: black;
@@ -102,6 +110,11 @@ a {
     margin-left: 540px;
   }
 
+  .kepecske {
+    border: 1px solid rgba(0, 0, 0, 0.699);
+    border-radius: 5%;
+    width: 260px;
+  }
 }
 
 .kosar {
@@ -118,11 +131,7 @@ select {
   display: block;
 }
 
-.kepecske {
-  border: 1px solid rgba(0, 0, 0, 0.699);
-  border-radius: 5%;
-  width: 260px;
-}
+
 
 .kosar:hover {
   background-color: rgba(196, 160, 160, 0.527);
