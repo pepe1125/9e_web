@@ -8,18 +8,21 @@ img{
   display: flex;
   margin: 55px;
   text-align: center;
+  justify-content: center; 
 }
 
 .kepek2{
   display: flex;
   margin: 55px;
   text-align: center;
+  justify-content: center;
 }
 
 .kepek3{
   display: flex;
   margin: 55px;
   text-align: center;
+  justify-content: center;
 }
 
 .kepek4{
