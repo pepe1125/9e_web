@@ -60,17 +60,18 @@
     <div style="text-align: center;">
         <form>
             <div class="container">
-                <h2 class="regisztracio_szin">Regisztráció</h2>
-
-                <hr>
-                <input type="text" placeholder="Add meg az emailed!" name="email" id="email" required>
-                <br>
-                <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
-                <br>
-                <input type="password" placeholder="Add meg a jelszavad mégegyszer!" name="psw-repeat" id="psw" required>
-                <hr>
-                <button type="submit" onclick="reg()" class="registerbtn">Regisztráció</button>
-                <br>
+                <fieldset>
+                    <legend>Regisztráció</legend>
+                    <div class="adatok">
+                        <input type="text" placeholder="Add meg az emailed!" name="email" id="email" >
+                        <br>
+                        <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" >
+                        <br>
+                        <input type="password" placeholder="Add meg a jelszavad mégegyszer!" name="psw-repeat" id="psw" >
+                        <button type="submit" onclick="reg()" class="registerbtn">Regisztráció</button>
+                        <br>
+                    </div>
+                </fieldset>
             </div>
         </form>
     </div>
