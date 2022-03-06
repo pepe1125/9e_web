@@ -62,14 +62,15 @@
             <div class="container">
                 <fieldset>
                     <legend>Bejelentkezés</legend>
-                    <input type="text" placeholder="Add meg az emailedet!" name="email" id="email">
+                    <input type="text" placeholder="Add meg az emailedet!" name="email" id="username">
                     <br>
                     <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw">
                     <br>
                     <p>Még nincs fiókod?&nbsp; <a href="register.html"> Regisztrálj!</a></p>
-                    <button type="submit" onclick="log()" class="registerbtn">Bejelentkezés</button>
+                    <button type="submit" onclick="log(username.value, psw.value)" class="registerbtn">Bejelentkezés</button>
                     <br>
                 </fieldset>
+                <script src="js/bejelentkezes.js"></script>
             </div>
         </form>
     </div>
@@ -77,35 +78,6 @@
         <p class="feher_szin">A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum 9/E osztálya</p>
     </div>
 
-    <script>
-        function log() {
-
-            var email = document.getElementById("email")
-            var jelszo = document.getElementById("psw")
-
-
-            if (email && email.value) {} else {
-                alert("Kérem írja be a hiányzó emailt!")
-            }
-
-            if (jelszo && jelszo.value) {} else {
-                alert("Kérem írja be a hiányzó jelszót!")
-            }
-
-            if (jelszo && jelszo.value || email && email.value) {
-                alert("Sikeresen bejelentkezés");
-                window.open("webshop_index.html")
-
-                let new_window =
-                    open(location, '_self');
-
-                new_window.close();
-
-                return false;
-            }
-
-        }
-    </script>
 
 </body>
 

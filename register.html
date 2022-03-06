@@ -58,16 +58,16 @@
         </div>
     </div>
     <div style="text-align: center;">
-        <form>
+        <form action="javascript:void(0);">
             <div class="container">
                 <fieldset>
                     <legend>Regisztráció</legend>
-                        <input type="text" placeholder="Add meg az emailed!" name="email" id="email" >
+                        <input type="text" placeholder="Add meg az emailed!" id="username" >
                         <br>
-                        <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" >
+                        <input type="password" placeholder="Add meg a jelszavad!" id="psw" >
                         <br>
-                        <input type="password" placeholder="Add meg a jelszavad mégegyszer!" name="psw-repeat" id="psw" >
-                        <button type="submit" onclick="reg()" class="registerbtn">Regisztráció</button>
+                        <input type="password" placeholder="Add meg a jelszavad mégegyszer!" id="psw2" >
+                        <button type="submit" onclick="reg(username.value, psw.value, psw2.value)" class="registerbtn">Regisztráció</button>
                         <br>
                 </fieldset>
             </div>
@@ -79,35 +79,7 @@
 
 
     <script src="js/topnav.js"></script>
-    <script>
-        function reg() {
-            var email = document.getElementById("email")
-            var jelszo = document.getElementById("psw")
-
-
-            if (email && email.value) {} else {
-                alert("Kérem írja be a hiányzó emailt!")
-            }
-
-            if (jelszo && jelszo.value) {} else {
-                alert("Kérem írja be a hiányzó jelszót!")
-            }
-
-            if (jelszo && jelszo.value || email && email.value) {
-                alert("Sikeresen regisztráció");
-
-
-
-                window.open("bejelentkezes.html")
-                let new_window =
-                    open(location, '_self');
-
-                new_window.close();
-
-                return false;
-            }
-        }
-    </script>
+    <script src="js/bejelentkezes.js"></script>
 
 
 </body>
