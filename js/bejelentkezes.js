@@ -44,8 +44,9 @@ function torles() {
 }
 
 
-function felhasznalo() {
+function felhasznalo(bej) {
   if (localStorage.getItem('felhasznalo') !=  null){
     document.getElementById('asd').innerHTML = localStorage.getItem('felhasznalo')
+    bej.style.display = "none"
   }
 }
