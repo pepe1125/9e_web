@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/felugro.css">
     <link rel="stylesheet" href="css/respnavbar.css">
     <link rel="stylesheet" href="css/login_reg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,24 +59,39 @@
         </div>
     </div>
     <div style="text-align: center;">
-        <form>
+        <form action="javascript:void(0)">
             <div class="container">
                 <fieldset>
                     <legend>Bejelentkezés</legend>
-                    <input type="text" placeholder="Add meg az emailedet!" name="email" id="username">
+                    <input type="text" placeholder="Add meg az emailedet!" name="email" id="username" required>
                     <br>
-                    <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw">
+                    <input type="password" placeholder="Add meg a jelszavad!" name="psw" id="psw" required>
                     <br>
                     <p>Még nincs fiókod?&nbsp; <a href="register.html"> Regisztrálj!</a></p>
-                    <button type="submit" onclick="log(username.value, psw.value)" class="registerbtn">Bejelentkezés</button>
+                    <p style="margin-top: -20px; margin-bottom: 20px;">Elfelejtetted a jelszavad?&nbsp; <a href="#modal"
+                            onclick="elfelejtett(nincs, nincsjel)"> Kattints ide!</a></p>
+                    <button type="submit" onclick="log(username.value, psw.value)"
+                        class="registerbtn">Bejelentkezés</button>
                     <br>
                 </fieldset>
                 <script src="js/bejelentkezes.js"></script>
             </div>
         </form>
+
+        <div class="popup" id="modal"> <a class="popup__overlay" href="#"></a>
+            <div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+                <div class="alap2"> 
+                    <h2>Elfelejtett jelszó</h2>
+                    <p><span id="nincs">Felhasználónév: &nbsp;</span> <span id="felhasznalonev"></span></p>
+                    <p><span id="nincsjel">Jelszó: &nbsp;</span> <span id="jelszo"></span></p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="footer">
-        <p class="feher_szin">A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum 9/E osztálya</p>
+        <p class="feher_szin">A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum 9/E
+            osztálya</p>
     </div>
 
 

@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/respnavbar.css">
-    <link rel="stylesheet" href="css/login_reg.css" <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KandóKicks</title>
     <link rel="icon" type="image/x-icon" href="img/logo/logo.png">
 </head>
 
-<body>
+<body onload="van(username.value, psw.value)">
     <div class="akcio">
         <p>Ingyenes szállítás 55.000Ft felett!</p>
     </div>
@@ -62,13 +63,16 @@
             <div class="container">
                 <fieldset>
                     <legend>Regisztráció</legend>
-                        <input type="text" placeholder="Add meg az emailed!" id="username" >
+                        <input type="text" placeholder="Add meg a felhasználóneved!" id="username" required>
                         <br>
-                        <input type="password" placeholder="Add meg a jelszavad!" id="psw" >
+                        <input type="password" placeholder="Add meg a jelszavad!" id="psw" required>
                         <br>
-                        <input type="password" placeholder="Add meg a jelszavad mégegyszer!" id="psw2" >
+                        
+                        <input type="password" placeholder="Add meg a jelszavad mégegyszer!" id="psw2" required ><br>
+                        
                         <button type="submit" onclick="reg(username.value, psw.value, psw2.value)" class="registerbtn">Regisztráció</button>
                         <br>
+                        <a href="bejelentkezes.html" id="letezik"></a>
                 </fieldset>
             </div>
         </form>

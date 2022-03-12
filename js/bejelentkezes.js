@@ -1,65 +1,42 @@
-function elfelejtett() {
-  key = localStorage.key(0);
-  jelszo = localStorage.getItem(key);
-
-  if (key == null && jelszo == null) {
-    alert("Ezen a gépen nincs aktív felhasználó!");
-  } else {
-    alert("Felhasználónév: " + key + "\nJelszó: " + jelszo);
+function elfelejtett(nincsfel, nincsjel) {
+  if (localStorage.getItem("felhasznalo") == null && localStorage.getItem("jelszo") == null) {
+    nincsfel.style.display = "none"
+    nincsjel.style.display = "none"
+    document.getElementById('felhasznalonev').innerHTML = "Ezen a gépen nincs aktív felhasználó <br><br> Kérlek regisztrálj!"
+   } else {
+    document.getElementById('felhasznalonev').innerHTML = localStorage.getItem("felhasznalo")
+    document.getElementById('jelszo').innerHTML = localStorage.getItem("jelszo")
   }
 }
 
 function reg(user, pass, pass2) {
-  key = localStorage.key(0);
-  jelszo = localStorage.getItem(key);
-  if (user != "" && pass != "" && pass2 != "") {
-    if (pass == pass2) {
-      alert("Sikeresen regisztráltál!");
-      localStorage.setItem(user, pass);
-      window.open("https://pepe1125.github.io/9e_web/bejelentkezes.html");
+if (user != '' && pass != '' && pass2 !=''){
+  if (pass == pass2) {
+    localStorage.setItem('felhasznalo', user);
+    localStorage.setItem('jelszo', pass);
+    window.open("bejelentkezes.html","_self")
+  } else if (pass != pass2) {
+    alert("Nem egyezik a két jelszó")
+  }}
+}
 
-      let new_window = open(location, "_self");
-      new_window.close();
-
-    } else {
-      alert("Nem egyezik meg a két jelszó");
-    }
-  } else if (user == "") {
-    alert("Add meg a hiányzó adatokat!");
-  } else if (pass == "") {
-    alert("Add meg a hiányzó adatokat!");
-  } else if (pass2 == "") {
-    alert("Add meg a hiányzó adatokat!");
-  } else {
-    alert("Helytelen felhasználó!");
-  }
+function van(user, pass){
+  if (localStorage.getItem("felhasznalo") != null && localStorage.getItem("jelszo") != null){
+    document.getElementById('letezik').innerHTML = "Már rendelkezel egy felhasználóval, kattints ide hogy bejelentkezz"
+  } 
 }
 
 function log(user, pass) {
-  key = localStorage.key(0);
-  jelszo = localStorage.getItem(key);
 
-  if (user == key && pass == jelszo) {
-    alert("Sikeresen beléptél!");
-    window.open("https://pepe1125.github.io/9e_web/webshop_index.html");
-
-    let new_window = open(location, "_self");
-
-    new_window.close();
-
-    return false;
-  } else if (user == key && pass != jelszo) {
-    alert("Helytelenül adtad meg jelszavad!");
-  } else if (user != key && pass == jelszo) {
-    alert("Helytelenül adtad meg felhasználónevet!");
-  } else if (user == "" && pass == "") {
-    alert("Add meg a hiányzó adatokat!");
-  } else {
-    alert("Mindkét adatot helytelenül adtad meg!");
+  if (user == localStorage.getItem("felhasznalo") && pass == localStorage.getItem("jelszo")){
+    alert("SIKERES BEJELENTKEZÉS")
+    window.open("webshop_index.html","_self")
+  } else if(user != localStorage.getItem("felhasznalo") && pass != localStorage.getItem("jelszo")) {
+    alert("Hibás adatok")
+  } else if(pass != localStorage.getItem("jelszo")){
+    alert("Hibás adatok")
   }
 
-  // alert(key);
-  // alert(localStorage.getItem(key))
 }
 
 function torles() {
