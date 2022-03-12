@@ -42,3 +42,10 @@ function log(user, pass) {
 function torles() {
   localStorage.clear();
 }
+
+
+function felhasznalo() {
+  if (localStorage.getItem('felhasznalo') !=  null){
+    document.getElementById('asd').innerHTML = localStorage.getItem('felhasznalo')
+  }
+}
