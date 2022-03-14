@@ -1,53 +1,5 @@
 img{
   width: 250px;
-  border-radius: 25px;
-  text-align: center;
-}
-
-.kepek1{
-  display: flex;
-  margin: 55px;
-  text-align: center;
-  justify-content: center; 
-  margin: auto;
-}
-
-.kepek2{
-  display: flex;
-  margin: 55px;
-  text-align: center;
-  justify-content: center;
-}
-
-.kepek3{
-  display: flex;
-  margin: 55px;
-  text-align: center;
-  justify-content: center;
-}
-
-.kepek4{
-  display: flex;
-  margin: 55px;
-  text-align: center;
-  justify-content: center;
-}
-
-figcaption{
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgba(46, 46, 46, 0.925);
-
-}
-
-h3{
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgba(46, 46, 46, 0.925);
-  text-align: center;
-
-}
-
-img{
-  width: 250px;
   text-align: center;
   justify-content: center;
 }
@@ -123,3 +75,4 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+ 
