@@ -140,7 +140,7 @@ h1:hover {
 
 /* Dolgok jobbra lebegtetése a navigációs sávon belül */
 
-#jobb, #jobbb {
+#jobb, #jobbb, #kijelentkezes {
   float: right;
 }
 

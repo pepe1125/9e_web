@@ -31,6 +31,7 @@ function log(user, pass) {
   if (user == localStorage.getItem("felhasznalo") && pass == localStorage.getItem("jelszo")){
     alert("SIKERES BEJELENTKEZÉS")
     window.open("webshop_index.html","_self")
+    localStorage.setItem('Bejelenetkezve', 'yes')
   } else if(user != localStorage.getItem("felhasznalo") && pass != localStorage.getItem("jelszo")) {
     alert("Hibás adatok")
   } else if(pass != localStorage.getItem("jelszo")){
@@ -44,9 +45,19 @@ function torles() {
 }
 
 
-function felhasznalo(bej) {
-  if (localStorage.getItem('felhasznalo') !=  null){
+function felhasznalo(bej, kij) {
+  if (localStorage.getItem("Bejelenetkezve") ==  "yes"){
     document.getElementById('asd').innerHTML = localStorage.getItem('felhasznalo')
     bej.style.display = "none"
+    kij.style.display = "block"
   }
+  else if (localStorage.getItem("Bejelenetkezve") == "no"){
+    kij.style.display = "none"
+  }
+  }
+
+
+function kijel() {
+  localStorage.setItem("Bejelenetkezve", "no");
+  location.reload();
 }
