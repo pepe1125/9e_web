@@ -1,0 +1,37 @@
+.kosar {
+    width: 55%;
+    background-color: rgb(211, 215, 215);
+    margin: 50px;
+    border-radius: 2px;padding: 30px;
+}
+
+
+.payment {
+    height: 630px;
+    width: 25%;
+    background-color: rgb(211, 215, 215);
+    margin: 50px;
+    float: right;
+    border-radius: 2px;
+}
+
+table {
+    padding: 10px;
+    border: 2px solid black;
+    width: 80%;
+    border-radius: 3px;
+    margin: 0 auto 0 auto;
+}
+
+td.adatok, th.elsosor {
+    text-align: center;
+}
+
+td, th {
+    padding: 5px;
+}
+
+.gomb {
+    margin: 0 auto 0 auto;
+    display: block;
+}
