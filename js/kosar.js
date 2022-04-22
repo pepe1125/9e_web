@@ -1,19 +1,14 @@
-var felhasznalonev = localStorage.getItem('username'); var jelszo = localStorage.getItem('password');
+var felhasznalonev = localStorage.getItem('felhasznalo'); var jelszo = localStorage.getItem('jelszo'); var bej = localStorage.getItem('Bejelenetkezve')
 
 if (felhasznalonev != null && jelszo != null) {
-    sessionStorage.setItem('username', felhasznalonev)
-    sessionStorage.setItem('password', jelszo)
+    sessionStorage.setItem('felhasznalo', felhasznalonev)
+    sessionStorage.setItem('jelszo', jelszo)
+    sessionStorage.setItem('Bejelenetkezve', bej)
 }
 
 function torleees() {
-    localStorage.removeItem('username'); localStorage.removeItem('password');
+    localStorage.removeItem('felhasznalo'); localStorage.removeItem('jelszo'); localStorage.removeItem('Bejelenetkezve')
 }
-
-var NikeDunkLow = 150000;
-var Air_Jordan_4_Retro = 250000;
-var Adidas_Yeezy_Slide_Glow = 100000;
-
-
 
 function kosarba(termek) {
     db = Number(prompt('Hány darabot akarsz?'))
@@ -54,4 +49,30 @@ function kosar() {
 function RemoveItem(item) {
     localStorage.removeItem(item)
 }
+
+var AirJordan1RetroHigh_Dior = 3150000;
+var NikeAirForce1_Low_ManchesterBee = 67000;
+var NikeKyrie_6_WhiteUniversityRed = 35000;
+var AirJordan1RetroHigh_TravisScott = 565000;
+var NikeAirMax_270_Golf_WhiteBlack = 55000;
+var Jordan4Retro_OffWhiteSail = 471000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

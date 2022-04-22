@@ -1,5 +1,3 @@
-localStorage.setItem('Bejelenetkezve', 'no')
-
 
 function elfelejtett(nincsfel, nincsjel) {
   if (localStorage.getItem("felhasznalo") == null && localStorage.getItem("jelszo") == null) {
