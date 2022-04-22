@@ -42,23 +42,7 @@ function log(user, pass) {
 }
 
 function torles() {
+  sessionStorage.clear();
   localStorage.clear();
 }
 
-
-function felhasznalo(bej, kij) {
-  if (localStorage.getItem("Bejelenetkezve") ==  "yes"){
-    document.getElementById('asd').innerHTML = localStorage.getItem('felhasznalo')
-    bej.style.display = "none"
-    kij.style.display = "block"
-  }
-  else if (localStorage.getItem("Bejelenetkezve") == "no"){
-    kij.style.display = "none"
-  }
-  }
-
-
-function kijel() {
-  localStorage.setItem("Bejelenetkezve", "no");
-  location.reload();
-}

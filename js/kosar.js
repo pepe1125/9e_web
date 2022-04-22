@@ -1,6 +1,6 @@
 var felhasznalonev = localStorage.getItem('felhasznalo'); var jelszo = localStorage.getItem('jelszo'); var bej = localStorage.getItem('Bejelenetkezve')
 
-if (felhasznalonev != null && jelszo != null) {
+if (felhasznalonev != null && jelszo != null && bej != null) {
     sessionStorage.setItem('felhasznalo', felhasznalonev)
     sessionStorage.setItem('jelszo', jelszo)
     sessionStorage.setItem('Bejelenetkezve', bej)
