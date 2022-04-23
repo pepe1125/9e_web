@@ -20,3 +20,4 @@ function vasarlas(){
     alert('Sikeres vásárlás');
     window.open('fooldal.html', '_self');
 }
+
