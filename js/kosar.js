@@ -51,6 +51,12 @@ function RemoveItem(item) {
     location.reload()
 }
 
+
+function nincs(){
+    alert('Jelenleg ebből a termékből nincs elérhető darab')
+}
+
+
 var AirJordan1RetroHigh_Dior = 3150000;
 var NikeAirForce1_Low_ManchesterBee = 67000;
 var NikeKyrie_6_WhiteUniversityRed = 35000;

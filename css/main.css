@@ -185,7 +185,7 @@ h1:hover {
   display: none; 
   position: fixed; 
   bottom: 90px; 
-  right: 11 px;
+  margin: 0 auto 0 auto;
   z-index: 99; 
   background-color: #333; 
   color: white; 

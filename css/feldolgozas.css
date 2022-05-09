@@ -1,0 +1,13 @@
+.kozep {
+    padding: 70px 0;
+  border: 3px solid rgb(168, 177, 168);
+  text-align: center;
+}
+
+body {
+    background-color: rgb(175, 175, 175);
+}
+
+#logofelirat {
+    margin-top: -35px;
+}

@@ -1,24 +1,7 @@
 function ferfi() {
-
-    window.open('ferfi.html')
-
-    let new_window =
-        open(location, '_self');
-
-    new_window.close();
-
-    return false;
-
+    window.open('ferfi.html', '_self')
 }
 
 function noi(){
-    window.open('noi.html')
-
-    let new_window =
-        open(location, '_self');
-
-    new_window.close();
-
-    return false;
-
+    window.open('noi.html', '_self')
 }

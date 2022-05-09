@@ -6,26 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/felugro.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/respnavbar.css">
+    <script src="js/kosar.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KandóKicks</title>
     <link rel="icon" type="image/x-icon" href="img/logo/logo.png">
 </head>
 
-<body>
+<body onload="atrak(); felhasznalo(jobbb, kijelentkezes);">
+    <script src="js/atrak.js"></script>
     <div class="akcio">
+        <div class="mozgo"></div>
         <p>Ingyenes szállítás 55.000Ft felett!</p>
     </div>
     <div class="header">
-        <img src="./img/logo/logo.png" alt="Logó" title="Logó" class="logo">
+        <img src="./img/logo/logo.png" alt="Logó" title="Logó" class="logo" />
         <h1>KandóKicks</h1>
+
+        <script>
+            function felhasznalo(bej, kij) {
+                if (localStorage.getItem("Bejelenetkezve") == "yes") {
+                    document.getElementById('asd').innerHTML = localStorage.getItem('felhasznalo')
+                    bej.style.display = "none"
+                    kij.style.display = "block"
+                }
+                else if (localStorage.getItem("Bejelenetkezve") == "no") {
+                    kij.style.display = "none"
+                }
+            }
+
+
+            function kijel() {
+                localStorage.setItem("Bejelenetkezve", "no");
+                location.reload();
+            }
+        </script>
 
         <div class="topnav" id="myTopnav">
             <a href="webshop_index.html" class="active">Főoldal</a>
 
             <div class="dropdown">
-                <button class="dropbtn">Női</a></button>
+                <button onclick="noi()" class="dropbtn">Női</a></button>
                 <div class="dropdown-content">
                     <a href="noi_nike.html">Nike</a>
                     <a href="noi_jordan.html">Jordan</a>
@@ -47,25 +70,25 @@
                     <a href="ferfi_new_balance.html">New Balance</a>
                 </div>
             </div>
-
             <script src="js/open.js"></script>
             <a href="gyerek.html">Gyerek</a>
-
             <a href="kosar.html" id="jobb"><i class="fa fa-shopping-cart"></i>
             </a>
             <a href="aszf.html" id="jobb" class="active">ÁSZF</a>
             <a href="rolunk.html" id="jobb" class="active">Rólunk</a>
-            <a href="bejelentkezes.html" id="jobb" class="active">Bejelentkezés</a>
-            <a id="jobb" id="felhasznaloo" ><span id="asd"></span></a>
+            <a href="bejelentkezes.html" id="jobbb" class="active">Bejelentkezés</a>
+            <a href="#" id="kijelentkezes" onclick="kijel()">Kijelentkezés</a>
+            <a id="jobb" id="felhasznaloo"><span id="asd"></span></a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+
     </div>
 
     <div class="alap">
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-4DFWD-Halo-Blush-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal1"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-4DFWD-Halo-Blush-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas 4DFWD | Halo Bush</p>
             <p class="felkapott_neve" id="ar"> 66.000 FT </p>
@@ -75,7 +98,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Dame-6-International-Womens-Day.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal2"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Dame-6-International-Womens-Day.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas Dame 6 | Glow Orange</p>
             <p class="felkapott_neve" id="ar"> 43.000 FT </p>
@@ -85,17 +108,19 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Earthlight-Stella-McCartney-Silver-Metallic.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Earthlight-Stella-McCartney-Silver-Metallic.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Adidas Earthlight Stella McCartney | Silver Metallic</p>
-            <p class="felkapott_neve" id="ar"> 57.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Adidas Earthlight Stella McCartney | Silver Metallic</p>
+                <p class="felkapott_neve" id="ar"> 57.000 FT </p>
+            </div>
 
         </div>
 
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Falcon-Triple-White-W-Product.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal3"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Falcon-Triple-White-W-Product.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas Falcon Triple White | White</p>
             <p class="felkapott_neve" id="ar"> 18.000 FT </p>
@@ -104,10 +129,12 @@
 
         <div class="felkapott_hatter">
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Bold-Halo-Mint-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Bold-Halo-Mint-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Adidas Forum | Halo Mint</p>
-            <p class="felkapott_neve" id="ar"> 46.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Adidas Forum | Halo Mint</p>
+                <p class="felkapott_neve" id="ar"> 46.000 FT </p>
+            </div>
         </div>
 
 
@@ -116,7 +143,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Low-SEED-Multi-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal4"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Low-SEED-Multi-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas Forum LOW | SEED Multi</p>
             <p class="felkapott_neve" id="ar"> 54.000 FT </p>
@@ -126,7 +153,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Low-White-Glory-Mint-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal5"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Low-White-Glory-Mint-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas Forum LOW | White Glory Mint</p>
             <p class="felkapott_neve" id="ar"> 36.000 FT </p>
@@ -136,17 +163,19 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Plus-Low-Purple-Tint-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Forum-Plus-Low-Purple-Tint-W.avif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Adidas Forum Plus LOW | Purple Tint</p>
-            <p class="felkapott_neve" id="ar"> 30.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Adidas Forum Plus LOW | Purple Tint</p>
+                <p class="felkapott_neve" id="ar"> 30.000 FT </p>
+            </div>
 
         </div>
 
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/Adidas-I-5923-Aero-Green-W.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal6"> <img class="felkapott_kepek" src="img/noi/Adidas/Adidas-I-5923-Aero-Green-W.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas I 5923 | Aero Green</p>
             <p class="felkapott_neve" id="ar"> 24.000 FT </p>
@@ -156,7 +185,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Magmur-Runner-Naked-White-W-Product.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal7"> <img class="felkapott_kepek" src="img/noi/Adidas/adidas-Magmur-Runner-Naked-White-W-Product.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Adidas Magmur Runner | Naked White</p>
             <p class="felkapott_neve" id="ar"> 30.000 FT </p>
@@ -169,16 +198,18 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-Air-CMFT-Canyon-Rust-W.jfif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-Air-CMFT-Canyon-Rust-W.jfif" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Air Jordan 1 High Zoom Air | Canyon Rust</p>
-            <p class="felkapott_neve" id="ar"> 134.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Air Jordan 1 High Zoom Air | Canyon Rust</p>
+                <p class="felkapott_neve" id="ar"> 134.000 FT </p>
+            </div>
         </div>
 
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-Air-CMFT-Cauliflower-W-Product.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal8"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-Air-CMFT-Cauliflower-W-Product.webp" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Air Jordan 1 High Zoom Air | Cauliflower</p>
             <p class="felkapott_neve" id="ar"> 59.000 FT </p>
@@ -187,7 +218,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-CMFT-Olive-Aura-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal9"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-CMFT-Olive-Aura-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Air Jordan 1 High Zoom | Olive Aura</p>
             <p class="felkapott_neve" id="ar"> 120.000 FT </p>
@@ -196,30 +227,29 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Arctic-Pink-Gum-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Arctic-Pink-Gum-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Air Jordan 1 LOW | Arctic Pink Gum</p>
-            <p class="felkapott_neve" id="ar"> 42.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Air Jordan 1 LOW | Arctic Pink Gum</p>
+                <p class="felkapott_neve" id="ar"> 42.000 FT </p>
+            </div>
 
         </div>
 
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Black-University-Blue-White-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal10"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Black-University-Blue-White-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Air Jordan 1 LOW | Black University Blue White</p>
             <p class="felkapott_neve" id="ar"> 80.000 FT</p>
 
         </div>
 
-
-
-
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Canyon-Rust-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal11"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Canyon-Rust-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Air Jordan 1 LOW | Canyon Rust</p>
             <p class="felkapott_neve" id="ar"> 91.000 FT </p>
@@ -229,7 +259,7 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Mighty-Swooshers-Pink-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal12"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Mighty-Swooshers-Pink-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Air Jordan 1 LOW | Mighty Swooshers Pink</p>
             <p class="felkapott_neve" id="ar"> 26.000 FT </p>
@@ -239,50 +269,21 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Mulberry-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-Mulberry-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Air Jordan LOW | Mulberry</p>
-            <p class="felkapott_neve" id="ar"> 44.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Air Jordan LOW | Mulberry</p>
+                <p class="felkapott_neve" id="ar"> 44.000 FT </p>
+            </div>
 
         </div>
+
+        
 
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-SE-Twine-Orange-Quartz-Corduroy-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
-            </div>
-            <p class="felkapott_neve">Air Jordan 1 LOW | Twine Orange</p>
-            <p class="felkapott_neve" id="ar"> 73.000 FT </p>
-
-        </div>
-
-        <div class="felkapott_hatter">
-
-            <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Jordan/Air-Jordan-1-Low-SE-White-Sesame-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
-            </div>
-            <p class="felkapott_neve">Air Jordan 1 LOW | White Sesame</p>
-            <p class="felkapott_neve" id="ar"> 65.000 FT </p>
-
-        </div>
-
-
-
-
-        <div class="felkapott_hatter">
-
-            <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-Black-2019-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
-            </div>
-            <p class="felkapott_neve">Nike Air Force 1 LOW | Black</p>
-            <p class="felkapott_neve" id="ar"> 40.000 FT </p>
-
-        </div>
-
-        <div class="felkapott_hatter">
-
-            <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-Fontanka-Foam-Pink-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a href="#modal13"> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-Fontanka-Foam-Pink-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
             <p class="felkapott_neve">Nike Air Force 1 LOW | Fontanka Foam Pink</p>
             <p class="felkapott_neve" id="ar"> 36.000 FT </p>
@@ -292,36 +293,299 @@
         <div class="felkapott_hatter">
 
             <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-LX-UV-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
+                <a onclick="nincs()"> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-LX-UV-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
             </div>
-            <p class="felkapott_neve">Nike Air Force 1 LOW | LX UV</p>
-            <p class="felkapott_neve" id="ar"> 94.000 FT </p>
+            <div class="nincs">
+                <p class="felkapott_neve">Nike Air Force 1 LOW | LX UV</p>
+                <p class="felkapott_neve" id="ar"> 94.000 FT </p>
+            </div>
         </div>
 
-        <div class="felkapott_hatter">
-
-            <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-LXX-Pink-Foam-W-Product.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
-            </div>
-            <p class="felkapott_neve">Nike Air Force 1 LOW | LXX Pink Foam</p>
-            <p class="felkapott_neve" id="ar"> 41.000 FT </p>
-
-        </div>
-
-        <div class="felkapott_hatter">
-
-            <div class="felkapott_kepek_2">
-                <a href=""> <img class="felkapott_kepek" src="img/noi/Nike/Nike-Air-Force-1-Low-Shadow-Go-The-Extra-Smile-W.jpg" alt="Az alt tag-ekkel nem kell foglalkoznod."> </a>
-            </div>
-            <p class="felkapott_neve">Nike Air Force 1 LOW Extra Smile | White/Yellow Strike-Team Orange-Black</p>
-            <p class="felkapott_neve" id="ar"> 39.000 FT </p>
-
-        </div>
+        
         <button onclick="topFunction()" id="gomb" title="Go to top">Tetejére</button>
         <div class="footer">
             <p class="feher_szin">A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum 9/E osztálya</p>
         </div>
 </body>
+
+<div class="popup" id="modal1">
+    <a class="popup__overlay" href="#"></a>
+    <div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+        <div class="alap2"> <img class="kepecske"
+                src="img/noi/Adidas/adidas-4DFWD-Halo-Blush-W-Product.jpg">
+            <p class="felugro">AAdidas 4DFWD | Halo Bush<br><br> Ára: 66.000 FT </p>
+            <div class="fieldset">
+                <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+                <div class="meretek">
+                    <select name="" id="">
+                        <option value="">40</option>
+                        <option value="">42</option>
+                        <option value="">43</option>
+                        <option value="">45</option>
+                    </select>
+                    <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="modal2">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Adidas/adidas-Dame-6-International-Womens-Day.jpg">
+        <p class="felugro">Adidas Dame 6 | Glow Orangebr><br> Ára: 43.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="popup" id="modal3">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Adidas/adidas-Falcon-Triple-White-W-Product.avif">
+        <p class="felugro">Adidas Falcon Triple White | White<br><br> Ára: 18.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal4">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Adidas/adidas-Forum-Low-SEED-Multi-W.avif">
+        <p class="felugro">Adidas Forum LOW | SEED Multi<br><br> Ára: 54.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal5">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Adidas/adidas-Forum-Low-White-Glory-Mint-W.jpg">
+        <p class="felugro">Adidas Forum LOW | White Glory Mint<br><br> Ára: 36.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal6">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Adidas/Adidas-I-5923-Aero-Green-W.webp">
+        <p class="felugro">Adidas I 5923 | Aero Green <br><br> Ára: 24.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal7">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Adidas/adidas-Magmur-Runner-Naked-White-W-Product.webp">
+        <p class="felugro">Adidas Magmur Runner | Naked White<br><br> Ára: 30.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal8">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Jordan/Air-Jordan-1-High-Zoom-Air-CMFT-Cauliflower-W-Product.webp">
+        <p class="felugro">Air Jordan 1 High Zoom Air | Cauliflower<br><br> Ára: 59.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal9">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Jordan/Air-Jordan-1-High-Zoom-CMFT-Olive-Aura-W-Product.jpg">
+        <p class="felugro">Air Jordan 1 High Zoom | Olive Aura<br><br> Ára: 120.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal10">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Jordan/Air-Jordan-1-Low-Black-University-Blue-White-W-Product.jpg">
+        <p class="felugro">Air Jordan 1 LOW | Black University Blue White<br><br> Ára: 80.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal11">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske" src="img/noi/Jordan/Air-Jordan-1-Low-Canyon-Rust-W.jpg">
+        <p class="felugro">Air Jordan 1 Low │ Canyon Rust<br><br> Ára: 91.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="popup" id="modal12">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Jordan/Air-Jordan-1-Low-Mighty-Swooshers-Pink-W.jpg">
+        <p class="felugro">Air Jordan 1 LOW | Mighty Swooshers Pink<br><br> Ára: 26.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="popup" id="modal13">
+<a class="popup__overlay" href="#"></a>
+<div class="popup__wrapper"> <a class="popup__close" href="#">X</a>
+    <div class="alap2"> <img class="kepecske"
+            src="img/noi/Nike/Nike-Air-Force-1-Low-Fontanka-Foam-Pink-W-Product.jpg">
+        <p class="felugro">Nike Air Force 1 LOW | Fontanka Foam Pink<br><br> Ára: 36.000 FT </p>
+        <div class="fieldset">
+            <p>Kérem válassza ki a kívánt méretet, majd adja hozzá a kosárhoz a cipőt</p>
+            <div class="meretek">
+                <select name="" id="">
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">45</option>
+                </select>
+                <button onclick="kosarba('')" class="kosar">KOSÁRBA</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 
 
 <script src="js/topnav.js"></script>
