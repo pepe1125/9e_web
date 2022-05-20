@@ -94,6 +94,36 @@ var AirJOrdan1RetroHigh_OG_Prototype = 60000;
 var AirJordan1RetroHigh_Fearless_UNC_Chicago = 130000;
 var AirJordan1Mid_Linen = 56000;
 
+var NikeSBDunkMidSpiderMan_Red = 317000;
+var NikeKyrie_7_DaughtersAzurie_DaybreakCitronPulse = 49000;
+var NikeAirForce_1_07__Black = 42000
+var NikeAirHuaracheRunShoePalace25thAnniversay_White = 82000;
+var NikeAirMax_97_WhiteGrey = 70000;
+var NikeBlazerLowsacaiKAWS_PurpleDusk = 77000;
+var NikeBlazerMid_77_Vintage_PineGreen = 36000;
+var NikeKobe_6_ProtoGrinch_Green = 160000;
+var NikeDunkSBHighGundam_White = 57000;
+var NikeFlightLegacy_WhitwRedBlack = 33000;
+var AirForce_1_DarkGreen = 80000;
+var NikeAirMAxPlus_3_BlackWhiteGrey = 64000;
+var NikeZoomGTJump_Multicolor = 77000;
+var NikeKyrie_5_Blue = 32000;
+var NikeSBDunkLowTravisScott_Brown = 900000;
+var NikeLebron_19_TuneSquad_Orange_Blue = 63000;
+var NIkeKyrie_4_Low_BrightCrimsonAquatone = 49000;
+var NikeDunkSBLow_Orange = 198000;
+var NikeDunkSBHighTinMan_BlackSliver = 102000;
+var NIkeDunkMIdSocialStatus_BurntBrown = 163000;
+var NikeBlazerMid_77_Infinite_Black = 30000;
+var NikeAirMonarch_4_WhiteBlackRed = 20000;
+var NikeAirRubberDunkOff_WhiteGreenStrike_BlackGreen = 485000;
+var NikeAirMax_270_WhiteGrey = 55000;
+var NikeLebron_12_TrillionDollarMan_SilverBlueGreen = 91.000; 
+
+
+
+
+
 
 
 
