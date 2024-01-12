@@ -5,58 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/kosar.css">
-    <link rel="stylesheet" href="css/respnavbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>KandóKicks</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Kosar.css">
+    <title>GetSetDunk</title>
+    <script src="kosar.js"></script>
     <link rel="icon" type="image/x-icon" href="img/logo/logo.png">
 </head>
 
+
 <body onload="torleees(); kosar()">
     <div class="akcio">
+        <div class="mozgo"></div>
         <p>Ingyenes szállítás 55.000Ft felett!</p>
     </div>
-    <div class="header">
-        <img src="./img/logo/logo.png" alt="Logó" title="Logó" class="logo">
-        <h1>KandóKicks</h1>
+    <div class="topnav">
+        <a href="Main.html">Főoldal</a>
+        <a href="Labdak.html">Labdák</a>
+        <a href="Cipok.html">Cipők</a>
+        <a href="Palank.html">Palánk</a>
+        <a class="active" href="Kosar.html">Kosár</a>
+        
+      </div>
 
-        <div class="topnav" id="myTopnav">
-            <a href="webshop_index.html" class="active">Főoldal</a>
 
-            <div class="dropdown">
-                <button onclick="noi()" class="dropbtn">Női</a></button>
-                <div class="dropdown-content">
-                    <a href="noi_nike.html">Nike</a>
-                    <a href="noi_jordan.html">Jordan</a>
-                    <a href="noi_adidas.html">Adidas</a>
-                    <a href="noi_puma.html">Puma</a>
-                    <a href="noi_reebook.html">Reebook</a>
-                    <a href="noi_new_balance.html">New Balance</a>
-                </div>
+    
+
+
+        
+
+            
             </div>
 
-            <div class="dropdown">
-                <button onclick="ferfi()" class="dropbtn">Férfi</button>
-                <div class="dropdown-content2">
-                    <a href="ferfi_nike.html">Nike</a>
-                    <a href="ferfi_jordan.html">Jordan</a>
-                    <a href="ferfi_adidas.html">Adidas</a>
-                    <a href="ferfi_puma.html">Puma</a>
-                    <a href="ferfi_reebook.html">Reebook</a>
-                    <a href="ferfi_new_balance.html">New Balance</a>
-                </div>
+            
             </div>
 
-            <script src="js/open.js"></script>
-            <a href="gyerek.html">Gyerek</a>
-
-            <a href="kosar.html" id="jobb"><i class="fa fa-shopping-cart"></i>
-            </a>
-            <a href="aszf.html" id="jobb" class="active">ÁSZF</a>
-            <a href="rolunk.html" id="jobb" class="active">Rólunk</a>
-            <a id="jobb" id="felhasznaloo"><span id="asd"></span></a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+           
         </div>
     </div>
 
@@ -66,12 +49,11 @@
     <table id="table" class="table table-bordered tbl-cart"></table>
     </div>
 
-    <button>Vissza a vásárláshoz</button>
-    <button>Fizetés</button>
+   <a href="Main.html"> <button class="vissza">Vissza a vásárláshoz</button></a>
+   <a href="Main.html">  <button class="fizet" >Fizetés</button> </a>
 
 
-    <script src="js/atrak.js"></script>
-    <script src="js/kosar.js"></script>
+
 
 
 
@@ -79,12 +61,11 @@
 
 
     <div class="footer">
-        <p class="feher_szin">A weboldal tanulmányi célra készült. Miskolci SZC Kandó Kálmán Informatikai Technikum 9/E
-            osztálya</p>
+        <p class="feher_szin">A weboldal tanulmányi célra készült. Készítette:
+            Lempner Martin és Berzi Dániel </p>
     </div>
 
 
-    <script src="js/topnav.js"></script>
 </body>
 
 </html>
